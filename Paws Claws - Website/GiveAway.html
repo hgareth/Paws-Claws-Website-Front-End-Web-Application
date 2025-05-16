@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have a Pet to Give Away - PawsClaws</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <table>
+            <tr>
+                <td><a href="Home.html">
+                    <img class= "logo" src="https://cdn0.iconfinder.com/data/icons/footprints-4/64/DOG-pet-australian_shepherd-pets-animals-512.png" alt="Wesbite Logo">
+                </a></td>
+                <td><h2>PawsClaws</h2></td>
+            </tr>
+         </table>
+         <div class="timeHeader"></div>
+    </header>
+    <nav class="homenav">
+        <ul class="homeul">
+            <li id="homeli"><a  class="active" href="Home.html">Home page</a></li>
+            <li><a href="pets.html">Browse Available Pets</a></li>
+            <li><a href="FindPets.html">Find a dog/cat</a></li>
+            <li><a href="DogCare.html">Dog Care</a></li>
+            <li><a href="Catcare.html">Cat Care</a></li>
+            <li><a href="GiveAway.html">Have a pet to give away </a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Give Away A Pet</h1>
+        <form id="giveAwayForm" action="POST">
+            <fieldset>
+                <!-- Pet Type -->
+            <label class="boldlabel">Pet Type</label>
+            <div>
+                <input type="radio" name="pet-type" id="dog" value="Dog">
+                <label for="dog">Dog</label>
+                <input type="radio" name="pet-type" id="cat" value="Cat">
+                <label for="cat">Cat</label>
+            </div>
+            <br>
+
+            <!--  pet Breed -->
+            <label class="boldlabel" for="giveaway-breed">Breed</label>
+            <div>
+                <input type="text" id="giveaway-breed" name="breed" placeholder="Enter breed (e.g., Labrador, Siamese)">
+            </div>
+             <br>
+
+            <!--  Age -->
+            <div>
+            <label for="giveaway-age" class="boldlabel">Age</label>
+            <select name="age" id="giveaway-age"  >
+                <option value="">Select age</option>
+                <option value="0-1 years">0-1 years</option>
+                <option value="1-3 years">1-3 years</option>
+                <option value="3-5 years">3-5 years</option>
+                <option value="5+ years">5+ years</option>
+            </select>
+            </div>
+            <br>
+
+            <!-- Gender-->
+             <label class="boldlabel">Gender</label>
+            <div>
+                <input type="radio" id="giveaway-male" name="gender" value="male" >
+                    <label for="giveaway-male">Male</label>
+                    <input type="radio" id="giveaway-female" name="gender" value="female" >
+                    <label for="giveaway-female">Female</label>
+            </div>
+            <br>
+
+            <!-- Gets Along -->
+             <label class="boldlabel">Gets Along with</label>
+             <div>
+                <input type="checkbox" name="getalong" id="Dogs" value="Other Dogs">
+                <label for="Dogs">Other Dogs</label>
+                <input type="checkbox" name="getalong" id="Cats" value="Other Cats">
+                <label for="Cats">Other Cats</label>
+                <input type="checkbox" name="getalong" id="Children" value="Small Children">
+                <label for="Children">Small Children</label>
+             </div>
+             <br>
+
+             <!-- Owners  Info -->
+             <label class="boldlabel" for="giveaway-owner-name">Owner's Name:</label>
+             <div>
+             <input type="text" id="giveaway-owner-name" name="owner-name" placeholder="Enter your full name" >
+            </div>
+            <br>
+
+             <!-- Owner's Email -->
+             <label class="boldlabel" for="giveaway-owner-email">Owner's Email:</label>
+             <div>
+             <input type="text" id="giveaway-owner-email" name="owner-email" placeholder="Enter your email address" >
+            </div>
+            <br>
+
+
+             <!-- About Pet -->
+             <label class="boldlabel" for="giveaway-comment">Tell Us About Your Pet:</label>
+             <div>
+             <textarea id="giveaway-comment" name="comment" rows="5" placeholder="Brag about your pet here!" ></textarea>
+            </div>
+            
+        </fieldset>
+        <br>
+        <div>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </main>
+    </div>
+    <footer>
+        <div class="footer1">
+        <table>
+            <tr>
+                <td><a href="Home.html">
+                    <img class="logo" src="https://cdn0.iconfinder.com/data/icons/footprints-4/64/DOG-pet-australian_shepherd-pets-animals-512.png" alt="Website Logo">
+                </a></td>
+                <td><h2>PawsClaws</h2></td>
+            </tr>
+         </table>
+         
+        <p>Your information is safe with us. We will never sell or misuse your data.</p>
+        <p><a href="disclaimer.html" id="privacy-link">Privacy/Disclaimer Statement</a></p>
+        </div>
+        <div class="footer2">
+            <p>©Copyright 2025 PawsClaws.All rights reserved. </p>
+        </div>
+    </footer>
+    <script src="function.js" defer></script>
+</body>
+</html>

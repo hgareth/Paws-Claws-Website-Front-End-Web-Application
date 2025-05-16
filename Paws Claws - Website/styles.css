@@ -1,0 +1,461 @@
+html,body{
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+#wrapper{
+    min-height: 100%; /* Ensure the wrapper takes up at least the full height of the viewport */
+    padding-bottom: 120px; /* Add padding to prevent content from being hidden behind the footer */
+    position: relative; /* Ensure the footer is positioned relative to the wrapper */
+}
+
+header{
+    border-bottom: 3px solid #54473F;
+    color: #754E1A;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.timeHeader{
+    margin-left: auto;
+    margin-right: 10px;
+    background-color: #AB886D;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.logo{
+    
+    margin-left: 10px;
+    
+}  
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.homenav{
+    position: absolute;
+    height: 100%; /* Ensure the nav takes up the full height of the viewport */
+    width: 220px;
+    top: 83px;
+    left: 0;
+    overflow-y:auto;
+    background-color: #E4E0E1;
+    z-index: 1;
+   
+}
+
+.homeul{
+    list-style-type: none;
+    margin:0px ;
+    padding: 0px;
+}
+#homeli{
+    display: block;
+    padding: 0;
+    
+}
+
+li a {
+    display: block;
+    color: #54473F;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s,color 0.3s;
+}
+
+li a.active{
+    background-color: #AB886D;
+    color: white;
+}
+
+li a:hover:not(.active){
+    background-color: #493628;
+    color: white ;
+}
+
+main{
+    margin-left: 220px;
+    padding: 20px;
+    color: #493628;
+    
+}
+
+#mainimg{
+    width: 100%; /* Make the image responsive */
+    max-width: 800px;
+    display: block;
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    background-color: #D6C0B3;
+}
+
+#mainh1 {
+    color: #493628;
+}
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #E4E0E1; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #493628; /* Dark brown for headings */
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    color: #493628; /* Dark brown for text */
+}
+
+.testimonials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+blockquote {
+    border-left: 5px solid #AB886D; /* Light brown accent */
+    padding-left: 10px;
+    font-style: italic;
+    color: #493628; /* Dark brown for text */
+    background-color: #FFFFFF; /* White background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+blockquote footer {
+    text-align: right;
+    font-weight: bold;
+    color: #754E1A; /* Light brown for author names */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #AB886D; /* Light brown background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #493628; /* Dark brown on hover */
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    color: #493628; /* Dark brown for text */
+}
+
+footer{
+    position: relative; /*Stick the footer to the bottom of the viewport */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the footer stays above other content */
+    
+}
+.footer1{
+    background-color:#D6C0B3;
+    padding: 10px;
+}
+.footer2{
+    background-color:#493628;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Page Browse Available pets */
+#under-construction{
+    text-align: center;
+    color: #493628;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+/* Browse Available Pets - Pet Card */
+.pet-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    transition: transform 0.3s ease-in-out;
+    border-left: 6px solid #AB886D; /* Left border accent */
+}
+
+.pet-card:hover {
+    transform: scale(1.02);
+}
+
+/* Pet Image */
+.pet-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+    background-color: #D6C0B3;
+    border: 2px solid #493628;
+}
+
+/* Pet Information */
+.pet-info {
+    flex: 1;
+    text-align: left;
+}
+
+.pet-info h2 {
+    margin: 0;
+    color: #493628;
+    font-size: 22px;
+}
+
+.pet-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #54473F;
+}
+
+/* Interested Button */
+.interested-btn {
+    background-color: #AB886D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    margin-top: 10px;
+}
+
+.interested-btn:hover {
+    background-color: #493628;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .pet-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .pet-card img {
+        margin: 0 auto 15px auto;
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .pet-info {
+        text-align: center;
+    }
+
+    .interested-btn {
+        width: 80%;
+        margin: 15px auto 0;
+    }
+}
+
+
+
+/* Page Find your Pet */
+
+fieldset{
+    background-color: #E4E0E1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px ;
+}
+
+form{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px; 
+}
+
+form label{
+    display:inline-block;
+    margin-top: 10px;
+    
+}
+
+.boldlabel{
+    font-weight: bold;
+}
+
+form input[type="radio"],form input[type="checkbox"],form input[type="text"]{
+    margin-right: 5px;
+}
+
+form select{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #54473F;
+    color: #54473F;
+    
+}
+
+form button{
+    width: 30%;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #54473F;
+    color: #493628;
+    cursor: pointer;
+}
+
+form button:hover{
+    opacity: 0.7;
+    background-color: #493628;
+    color: white ;
+}
+
+.error-message {
+    color: red;        
+    font-size: 0.9rem;   
+    margin-top: 5px;     
+     
+}
+
+/* Give away */
+
+form textarea{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #54473F;
+}
+
+form input[type="text"],form input[type="email"]{
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #54473F;
+}
+
+/* Contact Us */
+
+.contact-info{
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px ;
+}
+
+.contact-info ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    
+}
+
+.contact-info ul li strong{
+    display: inline-block;
+    
+}
+
+.contact-info a {
+    color: #54473F;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px ;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #54473F;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color:#AB886D ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #493628;
+    
+}
+
+#email-id{
+    display: inline;
+    
+}
+
+#email-id strong{
+    margin-right: 0px;
+}
+
